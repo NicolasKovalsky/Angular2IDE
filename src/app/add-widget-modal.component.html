@@ -1,0 +1,21 @@
+<div class="modal-header">
+  <button (click)="onClose()" aria-label="Close" class="close" type="button">
+          <span aria-hidden="true">×</span>
+      </button>
+  <h3 class="modal-title">Add a Widget</h3>
+</div>
+<div class="modal-body">
+
+  <div class="row">
+    <div class="col-md-3 widget-menu">
+      <app-widgets-menu></app-widgets-menu>
+    </div>
+    <div class="col-md-9">
+      <h2>Pick your component</h2>
+    </div>
+  </div>
+
+</div>
+<div class="modal-footer">
+  <button (click)="onClose()" class="btn btn-primary">OK</button>
+</div>

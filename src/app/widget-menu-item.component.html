@@ -1,0 +1,12 @@
+<span *ngIf="item.heading">{{(item.translate) || item.text}}</span>
+<a *ngIf="!item.heading" ng-href="{{$state.href(item.sref, item.params)}}"
+  title="{{item.text}}" md-ink-ripple="md-ink-ripple">
+  <div *ngIf="item.alert" [ngClass]="item.label || 'label label-success'" class="pull-right">{{item.alert}}</div><em *ngIf="item.icon" class="{{item.icon}}"></em><span>{{(item.translate) || item.text}}</span></a>
+<ul
+  *ngIf="item.submenu" uib-collapse="isCollapse(pIndex)" ng-init="addCollapse(pIndex, item)" class="nav sidebar-subnav">
+  <li class="sidebar-subnav-header">{{(item.translate) || item.text}}</li>
+  <li *ngFor="let _item of item.submenu; let _pIndex = (pIndex +'-'+ index)" 
+  [ngClass]="getMenuItemPropClasses(_item)"  (click)="toggleCollapse(pIndex)">
+    <app-widget-menu-item [item]="_item" [pIndex]="_pIndex"></app-widget-menu-item>
+    </li>
+  </ul>

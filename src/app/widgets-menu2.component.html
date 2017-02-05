@@ -1,0 +1,7 @@
+<div class="sidebar">
+  <ul class="nav ng-scope">
+    <li [ngClass]="getMenuItemPropClasses(item)" *ngFor="let item of menuItems; let pIndex = index" (click)="toggleCollapse(pIndex, true)">
+        <app-widget-menu-item [item]="item" [pIndex]="pIndex" ></app-widget-menu-item>
+    </li>
+  </ul>
+</div>

@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<div *ngIf="!inIframe()" class="wrapper">
+
+  <app-header class="topnavbar-wrapper"></app-header>
+  <app-sidebar></app-sidebar>
+  <app-canvas></app-canvas>
+
+ 
+  <app-add-widget-button></app-add-widget-button>
+  <app-dynamic-app></app-dynamic-app>
+  
+</div>
+
+
+

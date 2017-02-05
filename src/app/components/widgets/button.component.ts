@@ -1,0 +1,16 @@
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-button',
+  templateUrl: './button.component.html',
+  styles: []
+})
+export class ButtonComponent implements OnInit {
+  @Input() state = { editable: false };
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

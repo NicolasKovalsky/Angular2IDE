@@ -1,0 +1,7 @@
+<div id="main-area">
+
+    <div class="canvas" (wheel)="wheel()" [ngStyle]="{'height': (height*scale) +'px', 'width': (width*scale) +'px', '-webkit-transform': 'scale('+ scale +')'}">
+        <app-dynamic-region style="height:100%; width:100%"></app-dynamic-region>
+    </div>
+
+    <div>

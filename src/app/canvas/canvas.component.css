@@ -1,0 +1,27 @@
+div.canvas{
+    position: absolute;
+    left: 0;
+    margin: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: white;
+   /*  -ms-zoom: 0.75;
+    -moz-transform: scale(0.75);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.75);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.75);
+    -webkit-transform-origin: 0 0;*/
+}
+
+div#main-area{
+    background-color: #eff1f5;
+    position:absolute;
+    top: 48px;
+    bottom:0px;
+    left:314px;
+    right:0px;
+
+}
+

@@ -1,0 +1,12 @@
+header{
+    height: 48px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    border-color: #DADDE2;
+    border-top-color: rgb(218, 221, 226);
+    border-right-color: rgb(218, 221, 226);
+    border-left-color: rgb(218, 221, 226);
+    border-bottom: solid 1px rgb(218, 221, 226);
+    background:white;
+}
