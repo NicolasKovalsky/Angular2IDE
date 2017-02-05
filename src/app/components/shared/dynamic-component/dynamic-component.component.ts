@@ -23,21 +23,21 @@ export class DynamicComponentComponent implements OnInit {
   }
 
   ngAfterContentInit() {
-    this.compileToComponent(this.componentData)).then((factory: ComponentFactory<any>) => {
-      this.cmpRef = this.container.createComponent(factory)
-    });
+    //this.compileToComponent(this.componentData)).then((factory: ComponentFactory<any>) => {
+    //  this.cmpRef = this.container.createComponent(factory);
+    //});
   }
 
   //Generates component factory from component metadata & code.
-  compileToComponent(c_data: DynamicComponent): Promise<ComponentFactory<any>> {
+  // compileToComponent(c_data: DynamicComponent): Promise<ComponentFactory<any>> {
 
-    const metadata = new Component({
-      template: DynamicComponent.template,
-      styles: DynamicComponent.styles
-    });
-    let decoratedCmp = Component(metadata)(class myDynamicComponent { });
-    return this.compiler.compileComponentAsync(decoratedCmp);
-  }
+  //   const metadata = new Component({
+  //     template: DynamicComponent.template,
+  //     styles: DynamicComponent.styles
+  //   });
+  //   // let decoratedCmp = Component(metadata)(class myDynamicComponent { });
+  //   // return this.compiler.compileComponentAsync(decoratedCmp);
+  // }
 
 
 
