@@ -1,6 +1,6 @@
-import { browser, element, by } from 'protractor/globals';
+import { browser, element, by } from 'protractor';
 
-export class IDEPage {
+export class IdePage {
   navigateTo() {
     return browser.get('/');
   }

@@ -1,10 +1,10 @@
-import { IDEPage } from './app.po';
+import { IdePage } from './app.po';
 
 describe('ide App', function() {
-  let page: IDEPage;
+  let page: IdePage;
 
   beforeEach(() => {
-    page = new IDEPage();
+    page = new IdePage();
   });
 
   it('should display message saying app works', () => {

@@ -15,7 +15,7 @@ import { AddWidgetModalComponent } from './add-widget-modal.component';
 import { MenusService } from './menus.service';
 import { WidgetMenuItemComponent } from './widget-menu-item.component';
 import { NgGridModule } from 'angular2-grid';
-import {DragulaModule } from 'ng2-dragula';
+import { DragulaModule } from 'ng2-dragula';
 import { DndModule } from 'ng2-dnd';
 import { ComponentsModule } from './components/components.module';
 
@@ -33,7 +33,7 @@ import { ComponentsModule } from './components/components.module';
     HttpModule,
     ModalModule.forRoot(),
     BootstrapModalModule,
-    NgGridModule ,
+    NgGridModule,
     CanvasModule,
     DragulaModule,
     SidebarModule,
@@ -42,6 +42,6 @@ import { ComponentsModule } from './components/components.module';
   ],
   providers: [MenusService],
   bootstrap: [AppComponent],
-  entryComponents: [ AddWidgetModalComponent, HeaderComponent ]
+  entryComponents: [AddWidgetModalComponent, HeaderComponent]
 })
 export class AppModule { }
